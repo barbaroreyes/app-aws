@@ -30,7 +30,7 @@ export async function getStaticProps (req) {
   const { DataStore } = withSSRContext(req)
   const { params } = req
   const { id } = params
-  const post = await DataStore.query(Post, id)
+  const post = await DataStore.query(Post , id)
 
   return {
     props: {

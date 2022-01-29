@@ -20,10 +20,14 @@ export default function Home() {
       {
         posts.map(post => (
           <Link href={`/posts/${post.id}`}>
+            <a >
             <a>
               <h2>{post.title}</h2>
             </a>
+          </a>
+
           </Link>
+          
         ))
       }
     </div>
